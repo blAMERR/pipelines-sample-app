@@ -4,7 +4,8 @@ metadata:
   name: pipelinessampleapp 
 spec:
   selector:
-    app: pipelinessampleapp
+    matchLabels:
+      app: pipelinessampleapp
   replicas: 1
   template:
     metadata:
