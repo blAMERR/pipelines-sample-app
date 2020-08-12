@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: pipelinessampleapp 
 spec:
+  selector:
+    matchLabels:
+        name: pipelinessampleapp
   replicas: 1
   template:
     metadata:
